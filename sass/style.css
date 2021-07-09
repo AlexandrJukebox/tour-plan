@@ -12,6 +12,10 @@ body {
   margin: auto;
 }
 
+.navbar {
+  font-weight: bold;
+}
+
 .img {
   max-width: 100%;
 }
@@ -535,7 +539,7 @@ template {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     max-width: 700px;
     width: 92%;
