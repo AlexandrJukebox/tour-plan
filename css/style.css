@@ -626,15 +626,21 @@ template {
     width: 92%;
   }
   .search__input {
-    width: 363px;
+    width: 340px;
   }
-  .search__button {
-    right: 23px;
+  .navbar__search {
+    margin-left: 48px;
   }
   .navbar-menu {
     padding-top: 19px;
     padding-bottom: 22px;
     justify-content: space-around;
+  }
+  .hotel-description {
+    margin-top: 1px;
+  }
+  .hotel-info__name {
+    margin: 0;
   }
 }
 
