@@ -522,6 +522,7 @@ template {
 .hotel-info__offer {
   margin-left: 14px;
   margin-top: 4px;
+  font-weight: 700;
 }
 
 .hotel-name {
@@ -535,7 +536,8 @@ template {
 }
 
 .hotel-description {
-  margin: 5px 0;
+  margin: 0 0;
+  font-weight: 400;
 }
 
 .hotel-wrapper {
@@ -588,12 +590,12 @@ template {
 .rating__counter {
   font-size: 14px;
   line-height: 18px;
+  font-weight: 700;
 }
 
-.rating::after {
+.rating__counter::after {
   content: '5';
   font-size: 10px;
-  margin-left: -5px;
 }
 
 .swiper-container {

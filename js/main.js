@@ -7,4 +7,5 @@ const swiper = new Swiper('.swiper-container', {
     nextEl: '.slider-button--next',
     prevEl: '.slider-button--prev',
   },
+  speed: 1000,
 });
