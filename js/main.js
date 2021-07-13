@@ -1,12 +1,12 @@
-const swiper = new Swiper('.swiper-container', {
+const hotelswiper = new Swiper('.hotel-slider', {
   // Optional parameters 
     loop: true,
   // Transition effect ('slide' | 'fade' | 'cube' | 'coverflow' | 'flip')
     effect: 'coverflow',
   // Navigation arrows
   navigation: {
-    nextEl: '.slider-button--next',
-    prevEl: '.slider-button--prev',
+    nextEl: '.hotel-slider__button--next',
+    prevEl: '.hotel-slider__button--prev',
   },
 // keyboard left+right+pageUp+pageDown
     keyboard: {
