@@ -709,5 +709,14 @@ template {
   .container {
     max-width: 280px;
   }
+  .navbar-top {
+    padding-top: 22px;
+  }
+  .breadcrump-list {
+    padding-bottom: 7px;
+  }
+  .stars {
+    flex-basis: 22%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
