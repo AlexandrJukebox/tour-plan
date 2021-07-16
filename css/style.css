@@ -525,6 +525,10 @@ template {
   font-weight: 700;
 }
 
+.hotel-info__name {
+  text-transform: uppercase;
+}
+
 .hotel-name {
   font-size: 24px;
   line-height: 0px;
@@ -657,7 +661,7 @@ template {
   width: 350px;
   max-height: 210px;
   padding: 28px;
-  margin-right: 20px;
+  margin-right: 0;
   background-color: #0A223D;
   color: #fff;
   border-radius: 8px;
@@ -812,6 +816,7 @@ template {
   }
   .booking {
     width: 340px;
+    margin-right: 20px;
   }
   .map {
     width: 340px;
@@ -839,6 +844,16 @@ template {
   }
   .hotel-info__name {
     margin: 0;
+  }
+  .booking {
+    padding-left: 23px;
+    padding-right: 21px;
+  }
+  .booking__info {
+    margin-bottom: 10px;
+  }
+  .booking__per-room {
+    line-height: 12px;
   }
 }
 
@@ -915,6 +930,15 @@ template {
   .swiper-container {
     min-width: 280px;
     max-height: 180px;
+  }
+  .hotel-info {
+    padding-bottom: 36px;
+  }
+  .hotel-slider {
+    margin-bottom: 20px;
+  }
+  .map {
+    height: 219px;
   }
 }
 
