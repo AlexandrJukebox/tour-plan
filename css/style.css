@@ -765,6 +765,7 @@ template {
 
 .map__inside {
   width: 100%;
+  height: 213px;
 }
 
 @media (max-width: 1200px) {
