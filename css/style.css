@@ -793,6 +793,7 @@ template {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   max-width: 731px;
   margin: auto;
 }
@@ -857,7 +858,8 @@ template {
 }
 
 @media (max-width: 992px) {
-  .container {
+  .container,
+  .newsletter-wrapper {
     max-width: 760px;
   }
   .logo {
@@ -907,7 +909,8 @@ template {
 }
 
 @media (max-width: 768px) {
-  .container {
+  .container,
+  .newsletter-wrapper {
     max-width: 700px;
     width: 92%;
   }
@@ -1026,6 +1029,12 @@ template {
   }
   .hotel-right {
     min-height: 403px;
+  }
+  .newsletter-wrapper {
+    flex-direction: column;
+    max-width: 700px;
+    width: 92%;
+    align-items: flex-start;
   }
 }
 
