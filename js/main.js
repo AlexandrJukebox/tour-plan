@@ -1,4 +1,4 @@
-const hotelswiper = new Swiper('.hotel-slider', {
+const hotelSwiper = new Swiper('.hotel-slider', {
   // Optional parameters 
     loop: true,
   // Transition effect ('slide' | 'fade' | 'cube' | 'coverflow' | 'flip')
@@ -18,3 +18,24 @@ const hotelswiper = new Swiper('.hotel-slider', {
 // Speed	
   speed: 1000,
 });
+const reviewsSLider = new Swiper('.reviews-slider', {
+  // Optional parameters 
+    loop: true,
+  // Transition effect ('slide' | 'fade' | 'cube' | 'coverflow' | 'flip')
+    effect: 'slide',
+  // Navigation arrows
+  navigation: {
+    nextEl: '.reviews-slider__button--next',
+    prevEl: '.reviews-slider__button--prev',
+  },
+// keyboard left+right+pageUp+pageDown
+    keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+        pageUpDown: true,
+  },
+    
+// Speed	
+  speed: 500,
+});
+

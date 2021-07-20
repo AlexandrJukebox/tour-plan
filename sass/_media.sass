@@ -66,6 +66,7 @@
             padding-bottom: 22px
             justify-content: space-around
     .hotel
+        padding-bottom: 57px
         &-description
             margin-top: 1px
         &-info
@@ -78,8 +79,21 @@
             margin-bottom: 10px
         &__per-room
             line-height: 12px
+    .newsletter
+        padding: 93px 0 93px 0
+        &__subscribe
+            padding-left: 5px
+    .subscribe
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 18px
+        &__button
+            font-weight: bold
+            font-size: 12px
+            line-height: 15px
 @media ( max-width: 767px)
-    .container,
+    .container
         max-width: 700px
         width: 92%
     .navbar
@@ -107,6 +121,7 @@
     .stars
         flex-basis: auto
     .hotel
+        padding-bottom: 57px
         &-name
             flex-basis: 100%
         &-wrapper
@@ -133,7 +148,7 @@
     .map
         width: 100%
         height: 210px
-
+    .newsletter
 @media (max-width:576px)
     .logo
         width: 99px
@@ -142,6 +157,7 @@
             min-width: 280px
             max-height: 180px
     .hotel
+        padding-bottom: 42px
         &-info
             padding-bottom: 36px
         &-slider
@@ -152,17 +168,26 @@
         &-right
             min-height: 403px
     .newsletter
-        &__title
+        padding: 76px 7px 83px 9px
+        &-title
             margin-bottom: 37px
+            font-weight: 300
+            font-size: 20px
+            line-height: 25px
+            &__strong
+                font-size: 30px
+                line-height: 38px
+                padding-top: 4px
         &-wrapper
             flex-direction: column
             max-width: 700px
             width: 92%
-            padding: 76px 0 83px 0
+            padding: 0
             align-items: flex-start
     .subscribe
-        w100%
-
+        width: 100%
+        &__button
+            right: -4px
 @media (max-width:320px)
     .container
         max-width: 280px
