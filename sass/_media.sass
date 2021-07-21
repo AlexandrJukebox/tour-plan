@@ -186,10 +186,6 @@
 @media (max-width:576px)
     .logo
         width: 99px
-    .swiper
-        &-container
-            min-width: 280px
-            max-height: 180px
     .hotel
         padding-bottom: 42px
         &-info
@@ -199,15 +195,21 @@
     .map
         height: 172px
     .hotel
+        padding-bottom: 39px
         &-right
             min-height: 403px
+        &-slider
+            min-width: 280px
+            max-height: 180px
     .newsletter
-        padding: 76px 7px 83px 9px
+        padding: 76px 7px 84px 9px
         &-title
             margin-bottom: 37px
             font-weight: 300
             font-size: 20px
             line-height: 25px
+        &__subscribe
+            padding-left: 0
             &__strong
                 font-size: 30px
                 line-height: 38px
@@ -221,7 +223,24 @@
     .subscribe
         width: 100%
         &__button
-            right: -4px
+            right: 0
+        &__input
+            padding-left: 20px
+    .reviews
+        padding-top: 39px
+        &__title
+            font-size: 18px
+            line-height: 23px
+            margin-bottom: 44px
+        &-slider
+            &__item
+                padding: 0 31px 30px
+            &__text
+                font-size: 12px
+                line-height: 160%
+                text-align: left
+            &__profile
+                margin-bottom: 28px
 @media (max-width:320px)
     .container
         max-width: 280px
@@ -235,3 +254,17 @@
         flex-basis: 22%
         padding-left: 0
         padding-bottom: 2px
+    .reviews
+        &__title
+            font-size: 18px
+            line-height: 23px
+            margin-bottom: 44px
+            max-width: 260px
+            margin-left: 8px
+        &-slider
+            &__button
+                top: 17px
+                &--prev
+                    left: 43%
+                &--next
+                    right: 43%
