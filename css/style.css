@@ -1080,6 +1080,22 @@ template {
     font-size: 12px;
     line-height: 15px;
   }
+  .reviews__title {
+    font-size: 30px;
+    margin-bottom: 44px;
+  }
+  .reviews-slider__item {
+    padding: 0 64px 30px;
+  }
+  .reviews-slider__button {
+    top: 50%;
+  }
+  .reviews-slider__button--prev {
+    left: 1px;
+  }
+  .reviews-slider__button--next {
+    right: 1px;
+  }
 }
 
 @media (max-width: 767px) {
