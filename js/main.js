@@ -38,4 +38,3 @@ const reviewsSLider = new Swiper('.reviews-slider', {
 // Speed	
   speed: 500,
 });
-
