@@ -855,8 +855,8 @@ template {
 .reviews__title {
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
-  line-height: 38px;
+  font-size: 36px;
+  line-height: 45px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 70px;
@@ -870,7 +870,7 @@ template {
   margin: 45px auto 0;
   background-color: #fff;
   border-radius: 8px;
-  padding: 0 62px 30px;
+  padding: 0 100px 30px;
 }
 
 .reviews-slider__item:before {
@@ -897,7 +897,7 @@ template {
 
 .reviews-slider__button {
   position: absolute;
-  top: 50%;
+  top: 45%;
   transform: translateY(-50%);
   width: 30px;
   height: 50px;
@@ -912,12 +912,12 @@ template {
 
 .reviews-slider__button--prev {
   background-image: url(../img/arrow-prev-secondary.svg);
-  left: 0;
+  left: 18px;
 }
 
 .reviews-slider__button--next {
   background-image: url(../img/arrow-next-secondary.svg);
-  right: 0;
+  right: 18px;
 }
 
 .reviews-slider__profile {
@@ -950,7 +950,7 @@ template {
   font-weight: normal;
   font-size: 10px;
   line-height: 13px;
-  margin-bottom: 4px;
+  margin-bottom: -4px;
 }
 
 .reviews-slider__text {
