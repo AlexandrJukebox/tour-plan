@@ -42,5 +42,5 @@ $('.parallax-window').parallax({
   imageSrc: '/path/to/image.jpg',
   speed: 0.2, 
   parallax: 'scroll',
-  imageSrc:'../img/newsletter-bg.jpg',
+  imageSrc:'img/newsletter-bg.jpg',
 });

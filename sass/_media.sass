@@ -7,7 +7,9 @@
             &__img
                 height: 100%
                 object-fit: cover
-
+    .card
+        width: 230px
+        height: 230px
 @media  (max-width: 992px)
     .container,
     .newsletter-wrapper
@@ -53,6 +55,14 @@
         &-slider
             &__item
                 max-width: 580px
+    .activities
+        &-wrapper
+            flex-wrap: wrap
+        &__card
+            margin-bottom: 20px
+    .card
+        width: 340px
+        height: 230px
 @media ( max-width: 768px)
     .container,
     .newsletter-wrapper
@@ -108,6 +118,24 @@
                     left: 1px
                 &--next
                     right: 1px
+    .activities
+        padding-top: 19px
+        &__title
+            margin-bottom: 55px
+    .card
+        height: 255px
+        &__title
+            &--header-one
+                margin-bottom: 17px
+                width: 55%
+            &--header-two,
+            &--header-four
+                margin-bottom: 17px
+                width: 70%
+            &--header-three
+                margin-bottom: 17px
+                width: 60%
+        &__button
 
 @media ( max-width: 767px)
     .container
@@ -183,6 +211,12 @@
                     right: 50%
                     margin-right: -70px
                     transform: translate(50%, 0)
+    .activities
+        padding-top: 40px
+        padding-bottom: 60px
+    .card
+        width: 49%
+        height: 255px
 @media (max-width:576px)
     .logo
         width: 99px
@@ -228,6 +262,7 @@
             padding-left: 20px
     .reviews
         padding-top: 39px
+        padding-bottom: 61px
         &__title
             font-size: 18px
             line-height: 23px
@@ -241,6 +276,37 @@
                 text-align: left
             &__profile
                 margin-bottom: 28px
+    .activities
+        flex-flow: wrap
+        padding-top: 0
+        &-wrapper
+            display: flex
+        &__card
+            &:nth-child(1)
+                order: 1
+            &:nth-child(2)
+                order: 3
+            &:nth-child(3)
+                order: 2
+                margin-bottom: 28px
+            &:nth-child(4)
+                order: 4
+        &__title
+            font-size: 18px
+            line-height: 23px
+            margin-bottom: 36px
+    .card
+        width: 100%
+        &__title
+            &--header-one
+                width: 65%
+            &--header-three
+                width: 72%
+            &--header-four
+                width: 95%
+        &--header-four
+            margin-bottom: 17px
+            width: 70%
 @media (max-width:320px)
     .container
         max-width: 280px
