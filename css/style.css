@@ -981,7 +981,6 @@ template {
 }
 
 .card {
-  border: 1px solid red;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1019,6 +1018,7 @@ template {
 .card__title {
   margin-top: auto;
   margin-bottom: 18px;
+  max-height: 155px;
   color: #fff;
   font-style: normal;
   font-weight: bold;
@@ -1036,6 +1036,7 @@ template {
 
 .card__button {
   max-width: 100%;
+  min-height: 16px;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
