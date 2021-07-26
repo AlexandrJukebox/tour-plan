@@ -10,6 +10,9 @@
     .card
         width: 230px
         height: 230px
+    .footer
+        &__input
+            flex-basis: 100%
 @media  (max-width: 992px)
     .container,
     .newsletter-wrapper
@@ -56,6 +59,7 @@
             &__item
                 max-width: 580px
     .activities
+        padding-bottom: 50px
         &-wrapper
             flex-wrap: wrap
         &__card
@@ -63,6 +67,56 @@
     .card
         width: 340px
         height: 230px
+    .footer
+        padding-top: 72px
+        &-wrapper
+            grid-template-columns: repeat(6, minmax(155px, 1fr))
+            grid-row-gap: 51px
+            grid-column-gap: 11px
+        &__title
+            &--inline
+                padding: 0 0 0 0
+            &--sum
+
+        &__input
+            flex-basis: 49%
+            padding: 0 28px
+        &__logo
+            grid-row: 1 / 2
+            grid-column: span 1
+            grid-row-gap: 40px
+            width: 96px
+        &__social
+            &-network
+                grid-row: 1 / 2
+                grid-column: span 4
+                align-self: center
+                padding: 14px 0 0 21px
+        &__categories
+            grid-row: 2 / 3
+            grid-column: span 1
+        &__legal
+            grid-column: span 2
+            padding: 0
+        &__additional
+            grid-column: span 2
+            padding-left: 35px
+        &__contact
+            &-details
+                grid-column: span 5
+                grid-row: 3
+        &__contacts
+            &-form
+                grid-column: span 4
+                grid-row: 4
+                margin-top: -18px
+                padding: 0
+                width: 539px
+        &__text
+            margin-left: 0
+        &__item
+            &--mb-2,&--mb-3
+                padding-left: 5px
 @media ( max-width: 768px)
     .container,
     .newsletter-wrapper
@@ -135,8 +189,9 @@
             &--header-three
                 margin-bottom: 17px
                 width: 60%
-        &__button
-
+    .footer
+        &__input
+            flex-basis: 45%
 @media ( max-width: 767px)
     .container
         max-width: 700px
@@ -307,6 +362,32 @@
         &--header-four
             margin-bottom: 17px
             width: 70%
+    .footer
+        &-wrapper
+            grid-template-columns: 1fr
+        &__logo
+            grid-row: 1
+            grid-column: 1
+        &__social
+            &-network
+                grid-row: 2
+                grid-column: 1
+        &__additional
+            grid-row: 3
+            grid-column: 1
+        &__categories
+            grid-row: 4
+            grid-column: 1
+        &__legal
+            grid-row: 5
+            grid-column: 1
+        &__contact
+            &-details
+                grid-row: 6
+                grid-column: 1
+            &-form
+                grid-row: 7
+                grid-column: 1
 @media (max-width:320px)
     .container
         max-width: 280px
