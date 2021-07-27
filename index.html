@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -446,7 +446,7 @@
             class="logo footer__logo"
           />
           <div class="footer__list footer__categories">
-            <h3 class="footer__title">ALL CATEGORIES</h3>
+            <h3 class="footer__title footer__title--all-categories">ALL CATEGORIES</h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">All Deals </a>
@@ -574,11 +574,11 @@
           <div class="footer__contacts-form">
             <h3 class="footer__title footer__title--sum">Send us a message</h3>
             <form action="#" class="footer__form">
-              <input type="Your Full Name*" class="input footer__input" />
-              <input type="Phone Number*" class="input footer__input" />
+              <input type="text" placeholder="Your Full Name*" class="input footer__input" />
+              <input type="text" placeholder="Phone Number*" class="input footer__input" />
               <textarea
                 cols="30"
-                rows="5"
+                rows="6"
                 class="footer__message"
                 placeholder="Message"
               ></textarea>
@@ -587,6 +587,16 @@
             </form>
           </div>
           <!-- /.footer__contacts-form -->
+          <div class="footer__other">
+              <span class="footer__links">
+                <a class="footer__links__disclaimer" href="#">Disclaimer</a>
+                <a class="footer__links__cou" href="#">Conditions of use</a>
+                <a class="footer__links__cp" href="#">Cancellation policy</a>
+              </span>
+              <span class="footer__payment"><img class="footer__payment--image" src="img/payment-cards.png"
+                  alt="Images: Payment cards"></span>
+          </div>
+          <!-- /.footer__other -->
         </div>
         <!-- /.footer-wrapper -->
       </div>

@@ -117,6 +117,19 @@
         &__item
             &--mb-2,&--mb-3
                 padding-left: 5px
+        &__other
+            grid-column: span 4
+            padding-left: 0
+            padding-top: 2px
+        &__links
+            &__disclaimer,,&__cou,&__cp
+                padding-right: 10px
+        &__payment
+            &--image
+                margin-right: -47px
+        &__message
+            margin-bottom: 19px
+
 @media ( max-width: 768px)
     .container,
     .newsletter-wrapper
@@ -191,7 +204,8 @@
                 width: 60%
     .footer
         &__input
-            flex-basis: 45%
+            flex-basis: 47%
+
 @media ( max-width: 767px)
     .container
         max-width: 700px
@@ -272,6 +286,29 @@
     .card
         width: 49%
         height: 255px
+@media ( max-width: 725px)
+    .footer
+        &__legal
+            grid-row: 2
+            grid-column: span 1
+        &__payment
+            margin-right: 13%
+@media ( max-width: 639px)
+    .footer
+        &__additional
+            padding-left: 0
+        &__payment
+            margin-right: 25%
+@media ( max-width: 599px)
+    .footer
+        &__additional
+            margin-left: -25px
+        &__contact
+            &-details
+                grid-row: 3
+
+        &__payment
+            margin-right: 25%
 @media (max-width:576px)
     .logo
         width: 99px
@@ -297,12 +334,12 @@
             font-weight: 300
             font-size: 20px
             line-height: 25px
-        &__subscribe
-            padding-left: 0
             &__strong
                 font-size: 30px
                 line-height: 38px
                 padding-top: 4px
+        &__subscribe
+            padding-left: 0
         &-wrapper
             flex-direction: column
             max-width: 700px
@@ -334,6 +371,7 @@
     .activities
         flex-flow: wrap
         padding-top: 0
+        padding-bottom: 40px
         &-wrapper
             display: flex
         &__card
@@ -363,8 +401,10 @@
             margin-bottom: 17px
             width: 70%
     .footer
+        padding-top: 66px
         &-wrapper
-            grid-template-columns: 1fr
+            grid-template-columns: 280px
+            grid-row-gap: 28px
         &__logo
             grid-row: 1
             grid-column: 1
@@ -372,22 +412,82 @@
             &-network
                 grid-row: 2
                 grid-column: 1
+                padding: 0
+                display: flex
+                flex-wrap: wrap
+            &-links
+                flex-basis: 15%
+        &__title
+            &--sum
+                margin-bottom: 18px
+            &--inline
+                flex-basis: 100%
+                padding-top: 14px
+                padding-bottom: 20px
+            &--all-categories
+                margin-bottom: 20px
+                padding-top: 3px
+        &__contacts
+            &-form
+                grid-row: 7
+                grid-column: span 1
         &__additional
-            grid-row: 3
-            grid-column: 1
-        &__categories
             grid-row: 4
+            grid-column: span 2
+            padding-left: 0
+            margin-left: 0
+        &__categories
+            grid-row: 5
             grid-column: 1
         &__legal
-            grid-row: 5
+            grid-row: 3
             grid-column: 1
         &__contact
             &-details
                 grid-row: 6
-                grid-column: 1
+                grid-column: span 1
+        &__contacts
             &-form
                 grid-row: 7
                 grid-column: 1
+                width: 300px
+                margin-top: 0
+                margin-bottom: 18px
+        &__input
+            flex-basis: 93%
+            padding: 0 21px
+        &__item
+            &--mb-2
+                margin-bottom: 18px
+                padding-left: 0
+            &--mb-3
+                padding-left: 0
+        &__icon-wrapper
+            min-width: 35px
+        &__message
+            flex-basis: 93%
+            margin-bottom: 12px
+        &__button
+            display: flex
+            order: 2
+            justify-content: center
+        &__info
+            display: flex
+            flex-basis: 93%
+            order: 1
+            margin-bottom: 14px
+        &__other
+            grid-row: 8
+            grid-column: 1
+            margin-top: -25px
+            flex-wrap: wrap
+        &__links
+            flex-basis: 105%
+            margin-bottom: 10px
+            &__disclaimer,,&__cou,&__cp
+                padding-right: 5px
+        &__payment
+            flex-basis: 93%
 @media (max-width:320px)
     .container
         max-width: 280px
