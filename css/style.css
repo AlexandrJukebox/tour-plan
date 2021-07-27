@@ -1798,10 +1798,6 @@ template {
     margin-bottom: 20px;
     padding-top: 3px;
   }
-  .footer__contacts-form {
-    grid-row: 7;
-    grid-column: span 1;
-  }
   .footer__additional {
     grid-row: 4;
     grid-column: span 2;
@@ -1822,8 +1818,8 @@ template {
   }
   .footer__contacts-form {
     grid-row: 7;
-    grid-column: 1;
-    width: 300px;
+    grid-column: span 2;
+    width: 103%;
     margin-top: 0;
     margin-bottom: 18px;
   }
