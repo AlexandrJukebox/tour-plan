@@ -1429,13 +1429,16 @@ template {
   .search__input {
     width: 340px;
   }
-  .navbar__search {
+  .search__search {
     margin-left: 48px;
   }
-  .navbar-menu {
+  .search-menu {
     padding-top: 19px;
     padding-bottom: 22px;
     justify-content: space-around;
+  }
+  .navbar__user--mobile_visible, .navbar__search--mobile_visible {
+    display: none;
   }
   .hotel {
     padding-bottom: 57px;
@@ -1520,8 +1523,38 @@ template {
     max-width: 700px;
     width: 92%;
   }
-  .navbar__search, .navbar-menu, .navbar__user {
+  body {
+    padding-top: 78px;
+  }
+  .navbar--mobile_fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .navbar__user--mobile_hidden, .navbar__search--mobile_hidden {
     display: none;
+  }
+  .navbar__user--mobile_visible, .navbar__search--mobile_visible {
+    display: flex;
+  }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 78px;
+  }
+  .navbar-bottom--visible {
+    display: block;
+  }
+  .navbar-menu {
+    flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
   }
   .navbar-top__menu-button {
     display: flex;
