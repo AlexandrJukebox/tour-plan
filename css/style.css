@@ -1569,6 +1569,7 @@ template {
   }
   .navbar-bottom--visible {
     display: block;
+    overflow: auto;
   }
   .navbar-menu {
     flex-direction: column;
@@ -1926,14 +1927,14 @@ template {
     margin-bottom: 17px;
   }
   .navbar-menu__item--mobile--visible:nth-child(1) {
-    margin-bottom: 29px;
+    margin-bottom: 32px;
   }
   .navbar-menu__item--mobile--visible:nth-child(2) {
     margin-bottom: 37px;
     margin-left: -47px;
   }
   .navbar-bottom--visible {
-    top: 71px;
+    top: 69px;
     padding-top: 10px;
   }
   .search__input--mobile--visible {
