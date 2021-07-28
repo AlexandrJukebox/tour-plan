@@ -14,7 +14,7 @@
   </head>
 
   <body>
-    <header class="navbar navbar--mobile_fixed">
+    <header class="navbar navbar--mobile--fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo">
@@ -24,7 +24,7 @@
               class="logo__image"
             />
           </a>
-          <form action="#" class="search navbar__search navbar__search--mobile_hidden">
+          <form action="#" class="search navbar__search navbar__search--mobile--hidden">
             <input
               type="text"
               class="search__input"
@@ -34,7 +34,7 @@
               <img src="img/search.svg" alt="Icon: search" />
             </button>
           </form>
-          <a href="#" class="user navbar__user navbar__user--mobile_hidden">
+          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
             <img
               src="img/user-avatar.jpg"
               alt="avatar: Nathan"
@@ -52,18 +52,18 @@
         <!--./navbar-top-->
       </div>
       <!--./container-->
-      <div class="navbar-bottom"><!--./navbar-menu-->
+      <div class="navbar-bottom">
         <div class="container">
           <ul class="navbar-menu">
-            <li class="navbar-menu__item navbar-menu__item--mobile_visible">
-              <a href="#" class="user navbar__user navbar__user--mobile_visible">
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+              <a href="#" class="user navbar__user navbar__user--mobile--visible">
                 <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar" />
                 <span class="user__name user__name--light">Nathan</span>
               </a>
             </li>
-            <li class="navbar-menu__item navbar-menu__item--mobile_visible">
-              <form action="#" class="search navbar__search navbar__search--mobile_visible">
-                <input type="text" class="search__input" placeholder="Search Location" />
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+              <form action="#" class="search navbar__search navbar__search--mobile--visible">
+                <input type="text" class="search__input search__input--mobile--visible" placeholder="Search Location" />
                 <button class="search__button">
                   <img src="img/search.svg" alt="Icon: search" />
                 </button>
@@ -91,9 +91,10 @@
               <a href="#" class="navbar-menu__link">Rodrigues</a>
             </li>
           </ul>
+          <!--./navbar-menu-->
         </div>
       </div>
-      <!--./navbar-menu-->
+      <!--./navbar-bottom-->
     </header>
     <nav class="breadcrump">
       <div class="container">
