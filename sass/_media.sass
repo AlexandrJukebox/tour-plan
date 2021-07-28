@@ -70,7 +70,7 @@
     .footer
         padding-top: 72px
         &-wrapper
-            grid-template-columns: repeat(6, minmax(155px, 1fr))
+            grid-template-columns: repeat(4, minmax(23%, 1fr))
             grid-row-gap: 51px
             grid-column-gap: 11px
         &__title
@@ -80,7 +80,7 @@
 
         &__input
             flex-basis: 49%
-            padding: 0 28px
+            padding: 0 23px
         &__logo
             grid-row: 1 / 2
             grid-column: span 1
@@ -91,16 +91,17 @@
                 grid-row: 1 / 2
                 grid-column: span 4
                 align-self: center
-                padding: 14px 0 0 21px
+                padding: 14px 0 0 12px
         &__categories
             grid-row: 2 / 3
             grid-column: span 1
         &__legal
             grid-column: span 2
             padding: 0
+            margin-left: -25px
         &__additional
             grid-column: span 2
-            padding-left: 35px
+            padding-left: 28px
         &__contact
             &-details
                 grid-column: span 5
@@ -126,7 +127,7 @@
                 padding-right: 10px
         &__payment
             &--image
-                margin-right: -47px
+                margin-right: -11px
         &__message
             margin-bottom: 19px
 @media ( max-width: 768px)
@@ -150,6 +151,12 @@
                     display: none
                 &--hidden
                     display: flex
+    .navbar
+        &__search
+            margin-left: 48px
+        &-menu
+            padding-top: 20px
+            justify-content: space-around
     .hotel
         padding-bottom: 57px
         &-description
@@ -337,24 +344,17 @@
         &__legal
             grid-row: 2
             grid-column: span 1
-        &__payment
-            margin-right: 13%
+            margin-left: 0
 @media ( max-width: 639px)
     .footer
         &__additional
             padding-left: 0
-        &__payment
-            margin-right: 25%
 @media ( max-width: 599px)
     .footer
         &__additional
-            margin-left: -25px
         &__contact
             &-details
                 grid-row: 3
-
-        &__payment
-            margin-right: 25%
 @media (max-width:576px)
     .logo
         width: 99px
@@ -471,7 +471,7 @@
                 padding-top: 14px
                 padding-bottom: 20px
             &--all-categories
-                margin-bottom: 20px
+                margin-bottom: 16px
                 padding-top: 3px
         &__additional
             grid-row: 4
@@ -484,6 +484,7 @@
         &__legal
             grid-row: 3
             grid-column: 1
+            margin-left: 0
         &__contact
             &-details
                 grid-row: 6
@@ -520,16 +521,16 @@
             margin-bottom: 14px
         &__other
             grid-row: 8
-            grid-column: 1
+            grid-column: span 2
             margin-top: -25px
             flex-wrap: wrap
         &__links
-            flex-basis: 105%
+            flex-basis: 55%
             margin-bottom: 10px
             &__disclaimer,,&__cou,&__cp
                 padding-right: 5px
         &__payment
-            flex-basis: 93%
+            flex-basis: 20%
     .navbar
         &-menu
             &__item
@@ -540,7 +541,8 @@
                         &:nth-child(1)
                             margin-bottom: 29px
                         &:nth-child(2)
-                            margin-bottom: 35px
+                            margin-bottom: 37px
+                            margin-left: -47px
         &-bottom
             &--visible
                 top: 71px
@@ -550,6 +552,10 @@
             &--mobile
                 &--visible
                     width: 100%
+@media (max-width:552px)
+    .footer
+        &__links
+            flex-basis: 100%
 @media (max-width:320px)
     .container
         max-width: 280px
