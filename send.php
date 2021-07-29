@@ -26,19 +26,19 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    //$mail->SMTPDebug = 2;
+   // $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    //$mail->Host       = 'smtp.gmail.com '; // SMTP сервера вашей почты
-    //$mail->Username   = 'goodworker219@gmail.com'; // Логин на почте
-    $mail->Host       = 'smtp.yandex.ru '; // SMTP сервера вашей почты
-    $mail->Username   = 'alexandrworkfreelans@yandex.ru'; // Логин на почте
-    $mail->Password   = 'zslwsvwbvzcfubhn'; // Пароль на почте
+    $mail->Host       = 'smtp.gmail.com '; // SMTP сервера вашей почты
+    $mail->Username   = 'goodworker219@gmail.com'; // Логин на почте
+    //$mail->Host       = 'smtp.yandex.ru '; // SMTP сервера вашей почты
+    //$mail->Username   = 'alexandrworkfreelans@yandex.ru'; // Логин на почте
+    $mail->Password   = 'zlgljjuqnyywogto'; // Пароль на почте //ivygygtpymvrhwmh
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    //$mail->setFrom('goodworker219@gmail.com', 'Alexandr G.'); // Адрес самой почты и имя отправителя
-    $mail->setFrom('alexandrworkfreelans@yandex.ru', 'Alexandr G.'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('goodworker219@gmail.com', 'Alexandr G.'); // Адрес самой почты и имя отправителя
+    //$mail->setFrom('alexandrworkfreelans@yandex.ru', 'Alexandr G.'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('cashalexg@yandex.ru'); // Ещё один, если нужен
@@ -50,6 +50,7 @@ try {
     $mail->Subject = $title;
     $mail->Body = $body;    
 
+// Проверяем отравленность сообщения
 // Проверяем отравленность сообщения
 if ($mail->send()) {$result = "success";} 
 else {$result = "error";}
