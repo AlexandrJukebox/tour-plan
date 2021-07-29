@@ -70,15 +70,15 @@ $(document).ready(function () {
     var modalDialog = $(".modal__dialog");
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
-    //Закрытие по Esc
+
 
   }
-
+  //Закрытие по Esc
   $(document).keyup(function (event) {
     if (event.key === "Escape" || event.keyCode === 27) {
       event.preventDefault();
-      const modalOverlay = $(".modal__overlay");
-      const modalDialog = $(".modal__dialog");
+      var modalOverlay = $(".modal__overlay");
+      var modalDialog = $(".modal__dialog");
       modalOverlay.removeClass("modal__overlay--visible");
       modalDialog.removeClass("modal__dialog--visible");
     }
