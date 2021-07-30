@@ -88,4 +88,36 @@ $(document).ready(function () {
     }
   });
 
+  // Обработка форм
+
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      rules: {
+        phone: {
+          minlength: 18,
+        },
+      },
+      messages: {
+        name: {
+          required: "Let us know your name",
+          minlength: "Name must contain more then 2 letters",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format name@domain.com",
+        },
+        phone: {
+          required: "Please, fill the number field",
+          minlength: "Please, fill full phone number",
+        },
+        subscribe: {
+          required: "Please, enter the email address for subscribe",
+        },
+      },
+    });
+  });
+
+  $(".phone").mask("+7 (000) 000-00-00");
+
 });

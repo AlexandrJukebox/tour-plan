@@ -75,6 +75,15 @@ button {
   color: #BDBDBD;
 }
 
+.error {
+  color: #fff;
+}
+
+.invalid {
+  color: #EC1F46;
+  border-bottom: 1px solid #EC1F46;
+}
+
 .navbar {
   background-color: #ffffff;
 }
@@ -798,10 +807,11 @@ template {
   color: #fff;
 }
 
-.booking__button--go-back {
+.booking__button--goback {
   display: block;
   width: 70%;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .map {
@@ -1240,6 +1250,10 @@ template {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   flex-basis: 47%;
   font-style: normal;
@@ -1360,13 +1374,14 @@ template {
 .modal__input {
   width: 100%;
   height: 48px;
-  margin-bottom: 17px;
+  margin-top: 17px;
 }
 
 .modal__message {
   width: 100%;
   height: 118px;
   min-height: 110px;
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 
@@ -1478,9 +1493,8 @@ template {
   .footer__title--inline {
     padding: 0 0 0 0;
   }
-  .footer__input {
-    flex-basis: 49%;
-    padding: 0 23px;
+  .footer__input-group {
+    width: 100%;
   }
   .footer__logo {
     grid-row: 1 / 2;
@@ -1990,9 +2004,8 @@ template {
     margin-top: 0;
     margin-bottom: 18px;
   }
-  .footer__input {
+  .footer__input-group {
     flex-basis: 93%;
-    padding: 0 21px;
   }
   .footer__item--mb-2 {
     margin-bottom: 18px;
