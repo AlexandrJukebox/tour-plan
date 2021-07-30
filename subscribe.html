@@ -242,10 +242,16 @@
                 <!-- /.footer__contact-details -->
                 <div class="footer__contacts-form">
                     <h3 class="footer__title footer__title--sum">Send us a message</h3>
-                    <form action="send.php" method="POST" class="footer__form">
-                        <input type="text" placeholder="Your Full Name*" class="input footer__input" name="name" />
-                        <input type="text" placeholder="Phone Number*" class="input footer__input" name="phone" />
-                        <textarea cols="30" rows="6" class="footer__message" placeholder="Message"
+                    <form action="send.php" method="POST" class="footer__form form">
+                        <div class="footer__input-group">
+                            <input type="text" placeholder="Your Full Name*" class="input footer__input" name="name"
+                                required minlength="2" />
+                        </div>
+                        <div class="footer__input-group">
+                            <input type="tel" placeholder="Phone Number*" class="input phone footer__input" name="phone"
+                                required />
+                        </div>
+                        <textarea cols="30" rows="6" class="message footer__message" placeholder="Message"
                             name="message"></textarea>
                         <button type="submit" class="button footer__button">Send</button>
                         <span class="footer__info">* Required Fields</span>
@@ -267,9 +273,12 @@
         </div>
         <!-- /.container -->
     </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
