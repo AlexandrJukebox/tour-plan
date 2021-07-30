@@ -88,7 +88,7 @@ $(document).ready(function () {
     }
   });
 
-  // Обработка форм
+  // Обработка формs
 
   $(".form").each(function () {
     $(this).validate({
@@ -110,9 +110,6 @@ $(document).ready(function () {
         phone: {
           required: "Please, fill the number field",
           minlength: "Please, fill full phone number",
-        },
-        subscribe: {
-          required: "Please, enter the email address for subscribe",
         },
       },
     });
