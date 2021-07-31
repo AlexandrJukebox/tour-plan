@@ -44,7 +44,7 @@ $(document).ready(function () {
   //Паралакс эфект
   $('.parallax-window').parallax({
     imageSrc: 'img/newsletter-bg.jpg',
-    speed: 0.2,
+    speed: 0.3,
     parallax: 'scroll',
   });
   //Всплывающее меню
@@ -116,5 +116,32 @@ $(document).ready(function () {
   });
 
   $(".phone").mask("+7 (000) 000-00-00");
-  AOS.init();
+  AOS.init({
+  disable: function() {
+    var maxWidth = 768;
+    return window.innerWidth < maxWidth;
+  }
+  });
+  //карта при наведении
+  let map_container = document.getElementById('map_container');
+      let options_map = {
+          once: true,//запуск один раз, и удаление наблюдателя сразу
+          passive: true,
+          capture: true
+      };
+      map_container.addEventListener('click', start_lazy_map, options_map);
+      map_container.addEventListener('mouseover', start_lazy_map, options_map);
+      map_container.addEventListener('touchstart', start_lazy_map, options_map);
+      map_container.addEventListener('touchmove', start_lazy_map, options_map);
+
+      let map_loaded = false;
+      function start_lazy_map() {
+          if (!map_loaded) {
+              let map_block = document.getElementById('ymap_lazy');
+              map_loaded = true;
+              map_block.setAttribute('src', map_block.getAttribute('data-src'));
+              map_block.removeAttribute('data_src');
+              console.log('YMAP LOADED');
+          }
+      }
 });

@@ -1,0 +1,1 @@
+critical.generate({inline:!0,base:"./",src:"_index.html",width:1300,height:900,target:{css:"critical.css",html:"index.html",uncritical:"uncritical.css"},minify:!0,extract:!0});

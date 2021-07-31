@@ -8,17 +8,41 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
-$subscribe = $_POST['subscribe'];
+$email = $_POST['email'];
+
+// Переменные, которые отправляет пользователь
+$name = $_POST['name'];
+$phone = $_POST['phone'];
+$email = $_POST['email'];
+$message = $_POST['message'];
 
 // Формирование самого письма
-$title = "Новое обращение Best Tour Plan";
-$body = "
-<h2>Новое обращение</h2>
-<b>Подписчик:</b>$subscribe<br>
-<b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
-";
+if ($email) {
+    if ($name) {
+        $title = "Новый заказ Best Tour Plan";
+        $body = "
+        <h2>Поступил новый заказ</h2>
+        <b>Имя:</b> $name<br>
+        <b>Телефон:</b> $phone<br><br>
+        <b>Почта:</b> $email<br>
+        <b>Сообщение:</b><br>$message
+        ";
+    } else {
+        $title = "Новая подписка Best Tour Plan";
+        $body = "
+        <h2>Новая подписка</h2>
+        <b>Почта:</b> $email<br>
+        ";
+    }    
+} else {
+    $title = "Новое обращение Best Tour Plan";
+    $body = "
+    <h2>Новое обращение</h2>
+    <b>Имя:</b> $name<br>
+    <b>Телефон:</b> $phone<br><br>
+    <b>Сообщение:</b><br>$message
+    ";
+}
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -43,7 +67,7 @@ try {
     // Получатель письма
     $mail->addAddress('cashalexg@yandex.ru'); // Ещё один, если нужен
     $mail->addAddress('321gizatulin@gmail.com'); // Ещё один, если нужен
-    $mail->addAddress($subscribe); // Ещё один, если нужен
+    //$mail->addAddress($subscribe); // Ещё один, если нужен
 
     // Отправка сообщения
     $mail->isHTML(true);
