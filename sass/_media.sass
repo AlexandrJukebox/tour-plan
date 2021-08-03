@@ -71,13 +71,12 @@
         padding-top: 72px
         &-wrapper
             grid-template-columns: repeat(4, minmax(23%, 1fr))
-            grid-row-gap: 51px
+            grid-row-gap: 49px
             grid-column-gap: 11px
         &__title
             &--inline
                 padding: 0 0 0 0
             &--sum
-
         &__input
             &-group
                 width: 100%
@@ -85,6 +84,8 @@
             grid-row: 1 / 2
             grid-column: span 1
             grid-row-gap: 40px
+            width: 96px
+            padding-top: 0
         &__social
             &-network
                 grid-row: 1 / 2
@@ -120,7 +121,7 @@
         &__other
             grid-column: span 4
             padding-left: 0
-            padding-top: 2px
+            padding-top: 6px
         &__links
             &__disclaimer,,&__cou,&__cp
                 padding-right: 10px
@@ -129,6 +130,37 @@
                 margin-right: -11px
         &__message
             margin-bottom: 19px
+        &__info
+            padding-top: 19px
+    .modal
+        &__dialog
+            padding: 38px 55px
+@media ( max-width: 991px)
+    .button
+        &:hover
+            background-color: $primary
+    .card
+        &__button
+            &:hover
+                background-color: $primary
+    .subscribe
+        &__button
+            &:hover
+                background-color: $primary
+    .search
+        &__button
+            &:hover
+                background-color: $primary
+    .hotel
+        &-info
+            &__rating
+                &:hover
+                    background-color: $primary
+    .navbar
+        &-menu
+            &__link
+                &:hover
+                    color: #fff
 @media ( max-width: 768px)
     .container,
     .newsletter-wrapper
@@ -152,7 +184,6 @@
                     display: flex
     .navbar
         &__search
-            margin-left: 48px
         &-menu
             padding-top: 20px
             justify-content: space-around
@@ -338,8 +369,6 @@
     .card
         width: 49%
         height: 255px
-    .footer
-        &__logo
 @media ( max-width: 725px)
     .footer
         &__legal
@@ -465,7 +494,7 @@
                 flex-basis: 15%
         &__title
             &--sum
-                margin-bottom: 18px
+                margin-bottom: 12px
             &--inline
                 flex-basis: 100%
                 padding-top: 14px
@@ -496,6 +525,7 @@
                 width: 103%
                 margin-top: 0
                 margin-bottom: 18px
+                padding-top: 0
         &__input
             &-group
                 flex-basis: 93%
@@ -519,11 +549,13 @@
             flex-basis: 93%
             order: 1
             margin-bottom: 14px
+            padding-top: 3px
         &__other
             grid-row: 8
             grid-column: span 2
             margin-top: -25px
             flex-wrap: wrap
+            padding-top: 1px
         &__links
             flex-basis: 55%
             margin-bottom: 10px
@@ -532,6 +564,8 @@
         &__payment
             flex-basis: 20%
     .navbar
+        &__search
+            margin-left: 52px
         &-menu
             &__item
                 margin-bottom: 17px
@@ -552,6 +586,11 @@
             &--mobile
                 &--visible
                     width: 100%
+    .modal
+        &__input, &__button
+            width: 230px
+        &__dialog
+            padding: 38px 38px
 @media (max-width:552px)
     .footer
         &__links

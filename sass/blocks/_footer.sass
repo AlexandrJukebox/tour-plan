@@ -3,6 +3,8 @@
     color: $light
     padding-top: 108px
     padding-bottom: 46px
+    &__image
+        width: 100%
     &-wrapper
         display: grid
         grid-template-columns: repeat(4, minmax(min-content, 1fr))
@@ -10,6 +12,7 @@
         grid-auto-rows: minmax(40px, min-content)
         align-items: start
     &__logo
+        width: 153px
         grid-row: 1 / 3
         align-self: stretch
         padding-top: 28px
@@ -75,16 +78,10 @@
     &__icon
         &--pad-1
             padding: 4px 0 0 7px
-            width: 14px
-            height: 19.47px
         &--pad-2
             padding: 7px 0 0 5px
-            width: 18.21px
-            height: 18.21px
         &--pad-3
             padding: 5px 0 0 5px
-            width: 16.67px
-            height: 13.33px
         &-wrapper
             min-width: 40px
     &__text
@@ -98,9 +95,9 @@
         padding-bottom: 1px
     &__link
         color: inherit
-        &--img
-            width: 20px
-            height: 20px
+        &--ml
+            margin-left: 10px
+            display: block
     &__input
         width: 100%
         &-group
@@ -115,7 +112,7 @@
         background-color: #fff
         color: $text-color
         border-radius: 4px
-        padding: 18px 23px
+        padding: 20px 23px
         border: none
         flex-basis: 100%
         margin-bottom: 17px
@@ -130,6 +127,7 @@
         font-size: 12px
         line-height: 15px
         color: $footer-text-color
+        padding-top: 21px
     &__other
         grid-column: 2 / 5
         display: flex
@@ -145,7 +143,6 @@
         padding-top: 6px
         &__disclaimer,,&__cou,&__cp
             padding-right: 10px
-    &__payment
-        &--image
+    &-payment
+        &__image
             width: 136px
-            height: 22px

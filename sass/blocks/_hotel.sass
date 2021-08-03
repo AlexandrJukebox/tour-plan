@@ -12,6 +12,9 @@
             font-weight: 700
         &__name
             text-transform: uppercase
+        &__rating
+            &:hover
+                background-color: #d56f82
     &-name
         font-size: 24px
         line-height: 0px
@@ -24,8 +27,12 @@
         font-weight: 400
         font-size: 12px
         line-height: 15px
-        &__subscribe
-            margin-bottom: 10px
+    &-subscribe
+        margin: 0 0
+        font-weight: 400
+        font-size: 12px
+        line-height: 15px
+        margin-bottom: 10px
     &-wrapper
         display: flex
         flex-wrap: wrap
@@ -80,9 +87,7 @@
 .stars
     flex-basis: 100%
     padding-left: 2.8px
-    &__modifier
-        width: 8px
-        height: 8px
+    &-modifier
         margin-left: -2px
 .offer
     font-size: 10px
@@ -120,15 +125,6 @@
     font-family: Nunito
     font-style: normal
     font-weight: normal
-    &__img
-        &--home
-            width: 14px
-            height: 14px
-            margin-right: 14px
-        &--user
-            width: 14px
-            height: 14px
-            margin-right: 14px
     &__info
         display: flex
         justify-content: space-between
@@ -176,9 +172,6 @@
         font-weight: 600
         font-size: 18px
         line-height: 25px
-        &--phone
-            width: 13.3px
-            height: 13.41px
     &__num
         margin-left: 8px
         font-weight: 600
@@ -193,11 +186,19 @@
         border-radius: 4px
         background-color: $primary
         color: $light
-        &--goback
-            display: block
-            width: 70%
-            text-align: center
-            text-transform: uppercase
+    &-goback
+        width: 100%
+        min-height: 45px
+        font-weight: 600
+        font-size: 14px
+        line-height: 19px
+        border-radius: 4px
+        background-color: $primary
+        color: $light
+        display: block
+        width: 70%
+        text-align: center
+        text-transform: uppercase
 .map
     width: 100%
     height: 213px

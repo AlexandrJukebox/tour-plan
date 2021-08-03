@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/aos.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -18,16 +19,16 @@
     <div class="container">
       <div class="navbar-top">
         <a href="#" class="logo" data-aos="flip-left" data-aos-delay="300">
-          <img loading="lazy" loading='' src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image" />
+          <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image" />
         </a>
         <form action="#" class="search navbar__search navbar__search--mobile--hidden">
           <input type="text" class="search__input" placeholder="Search Location" />
           <button class="search__button">
-            <img loading="lazy" src="img/search.svg" alt="Icon: search" />
+            <img src="img/search.svg" alt="Icon: search" />
           </button>
         </form>
         <a href="#" class="user navbar__user navbar__user--mobile--hidden">
-          <img loading="lazy" src="img/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar" />
+          <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar" />
           <span class="user__name">Nathan</span>
         </a>
         <!--./user-->
@@ -45,7 +46,7 @@
         <ul class="navbar-menu">
           <li class="navbar-menu__item navbar-menu__item--mobile--visible">
             <a href="#" class="user navbar__user navbar__user--mobile--visible">
-              <img loading="lazy" src="img/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar" />
+              <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar" />
               <span class="user__name user__name--light">Nathan</span>
             </a>
           </li>
@@ -53,7 +54,7 @@
             <form action="#" class="search navbar__search navbar__search--mobile--visible">
               <input type="text" class="search__input search__input--mobile--visible" placeholder="Search Location" />
               <button class="search__button">
-                <img loading="lazy" src="img/search.svg" alt="Icon: search" />
+                <img src="img/search.svg" alt="Icon: search" />
               </button>
             </form>
           </li>
@@ -105,11 +106,11 @@
         <div class="hotel-info__text">
           <div class="hotel-wrapper">
             <div class="stars">
-              <img loading="lazy" class="stars__modifier" src="img/star.svg" alt="star" />
-              <img loading="lazy" class="stars__modifier" src="img/star.svg" alt="star" />
-              <img loading="lazy" class="stars__modifier" src="img/star.svg" alt="star" />
-              <img loading="lazy" class="stars__modifier" src="img/star.svg" alt="star" />
-              <img loading="lazy" class="stars__modifier" src="img/star.svg" alt="star" />
+              <img class="stars-modifier" src="img/star.svg" alt="star" />
+              <img class="stars-modifier" src="img/star.svg" alt="star" />
+              <img class="stars-modifier" src="img/star.svg" alt="star" />
+              <img class="stars-modifier" src="img/star.svg" alt="star" />
+              <img class="stars-modifier" src="img/star.svg" alt="star" />
             </div>
             <h1 class="hotel-name hotel-info__name">grand hilton hotel</h1>
             <span class="offer hotel-info__offer">Flash Offer</span>
@@ -132,19 +133,19 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <div class="swiper-slide hotel-slider__slide">
-              <img loading="lazy" class="hotel-slider__img" src="img/slide-1.jpg" alt="slide" />
+              <img class="hotel-slider__img" src="img/slide-1.jpg" alt="slide" />
             </div>
             <div class="swiper-slide hotel-slider__slide">
-              <img loading="lazy" class="hotel-slider__img" src="img/slide-2.jpg" alt="Слайд 2" />
+              <img class="hotel-slider__img" src="img/slide-2.jpg" alt="Слайд 2" />
             </div>
             <div class="swiper-slide hotel-slider__slide">
-              <img loading="lazy" class="hotel-slider__img" src="img/slide-3.jpg" alt="Слайд 3" />
+              <img class="hotel-slider__img" src="img/slide-3.jpg" alt="Слайд 3" />
             </div>
             <div class="swiper-slide hotel-slider__slide">
-              <img loading="lazy" class="hotel-slider__img" src="img/slide-4.jpg" alt="Слайд 4" />
+              <img class="hotel-slider__img" src="img/slide-4.jpg" alt="Слайд 4" />
             </div>
             <div class="swiper-slide hotel-slider__slide">
-              <img loading="lazy" class="hotel-slider__img" src="img/slide-5.jpg" alt="Слайд 5" />
+              <img class="hotel-slider__img" src="img/slide-5.jpg" alt="Слайд 5" />
             </div>
           </div>
 
@@ -164,12 +165,12 @@
               <!-- /.booking__price -->
               <div class="booking__room">
                 <div class="booking__text">
-                  <img loading="lazy"  class="booking__img--user booking__icon" src="img/user.svg" alt="Icon: user"/>
+                  <img src="img/user.svg" alt="Icon: user" class="booking__icon" />
                   <span class="booking__description">2 x Guests</span>
                 </div>
                 <!-- /.booking__text -->
                 <div class="booking__text">
-                  <img loading="lazy"  class="booking__img--home booking__icon" src="img/home.svg" alt="Icon: home"/>
+                  <img src="img/home.svg" alt="Icon: home" class="booking__icon" />
                   <span class="booking__description">1 x Room</span>
                 </div>
                 <!-- /.booking__text -->
@@ -180,7 +181,7 @@
             <div class="booking__call-center">
               <span class="booking__heading">Quick Booking</span>
               <a class="booking__number" href="tel:12100">
-                <img loading="lazy" class="booking__number--phone" src="img/phone-call-1.svg" alt="Icone: phone" />
+                <img src="img/phone-call-1.svg" alt="Icone: phone" />
                 <span class="booking__num">12100</span>
               </a>
             </div>
@@ -189,10 +190,16 @@
               Options</button>
           </div>
           <!-- /.booking -->
+          <!--
           <div id="map_container" class="map container-fluid">
-            <script id="ymap_lazy" async
-              data-src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A26f860b2bd00717ac99d3d5c108648a2e52b5e810cdecc0f4e9f6578273fc647&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+            <script id="ymap_lazy" data-src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A26f860b2bd00717ac99d3d5c108648a2e52b5e810cdecc0f4e9f6578273fc647&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
           </div>
+-->
+
+          
+                    <div id="map_container" class="map container-fluid">
+                   <script src="https://api-maps.yandex.ru/2.1/?apikey='50262bd1-0b5e-4386-8703-fc790483cca0'&lang=ru_RU" type="text/javascript">
+                  </script> </div>
           <!-- /.map -->
         </div>
         <!-- /.hotel-right -->
@@ -202,6 +209,7 @@
     <!--./container -->
   </section>
   <!--./hotel -->
+
   <section class="newsletter parallax-window">
     <div class="newsletter-wrapper">
       <h2 class="newsletter-title newsletter__title">
@@ -223,15 +231,15 @@
           <div class="swiper-slide">
             <div class="reviews-slider__item">
               <div class="reviews-slider__profile">
-                <img loading="lazy" src="img/reviews-avatar.jpg" alt="Photo: Megan Fox" class="reviews-slider__avatar" />
+                <img src="img/reviews-avatar.jpg" alt="Photo: Megan Fox" class="reviews-slider__avatar" />
                 <h3 class="reviews-slider__username">Megan Fox</h3>
                 <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                 <div class="reviews-slider__rating">
-                  <img loading="lazy" class="stars__modifier" src="img/star.svg" alt="star" />
-                  <img loading="lazy" class="stars__modifier" src="img/star.svg" alt="star" />
-                  <img loading="lazy" class="stars__modifier" src="img/star.svg" alt="star" />
-                  <img loading="lazy" class="stars__modifier" src="img/star.svg" alt="star" />
-                  <img loading="lazy" class="stars__modifier" src="img/star.svg" alt="star" />
+                  <img class="stars-modifier" src="img/star.svg" alt="star" />
+                  <img class="stars-modifier" src="img/star.svg" alt="star" />
+                  <img class="stars-modifier" src="img/star.svg" alt="star" />
+                  <img class="stars-modifier" src="img/star.svg" alt="star" />
+                  <img class="stars-modifier" src="img/star.svg" alt="star" />
                 </div>
                 <!-- /.reviews-slider__rating -->
               </div>
@@ -255,15 +263,15 @@
           <div class="swiper-slide">
             <div class="reviews-slider__item">
               <div class="reviews-slider__profile">
-                <img loading="lazy" src="img/reviews-avatar-2.jpg" alt="Photo: Suzy Devidson" class="reviews-slider__avatar" />
+                <img src="img/reviews-avatar-2.jpg" alt="Photo: Suzy Devidson" class="reviews-slider__avatar" />
                 <h3 class="reviews-slider__username">Suzy Devidson</h3>
                 <span class="reviews-slider__date">Stayed 20 Nov, 2018</span>
                 <div class="reviews-slider__rating">
-                  <img loading="lazy" class="stars__modifier" src="img/star.svg" alt="star" />
-                  <img loading="lazy" class="stars__modifier" src="img/star.svg" alt="star" />
-                  <img loading="lazy" class="stars__modifier" src="img/star.svg" alt="star" />
-                  <img loading="lazy" class="stars__modifier" src="img/star.svg" alt="star" />
-                  <img loading="lazy" class="stars__modifier" src="img/star.svg" alt="star" />
+                  <img class="stars-modifier" src="img/star.svg" alt="star" />
+                  <img class="stars-modifier" src="img/star.svg" alt="star" />
+                  <img class="stars-modifier" src="img/star.svg" alt="star" />
+                  <img class="stars-modifier" src="img/star.svg" alt="star" />
+                  <img class="stars-modifier" src="img/star.svg" alt="star" />
                 </div>
                 <!-- /.reviews-slider__rating -->
               </div>
@@ -298,32 +306,32 @@
       <h2 class="activities__title">Other Activities</h2>
       <div class="activities-wrapper">
         <div class="card activities__card" data-aos="fade-down" data-aos-delay="800">
-          <img loading="lazy" src="img/activities/activity-1.jpg" alt="The curious corner of chamarel" class="card__image" />
+          <img src="img/activities/activity-1.jpg" alt="The curious corner of chamarel" class="card__image" />
           <h3 class="card__title card__title--header-one">
             The curious corner of chamarel
           </h3>
-          <button class="card__button">Book Now</button>
+          <button class="card__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
         </div>
         <div class="card activities__card" data-aos="fade-down" data-aos-delay="600">
-          <img loading="lazy" src="img/activities/activity-2.jpg" alt="Gymkhana club golf course" class="card__image" />
+          <img src="img/activities/activity-2.jpg" alt="Gymkhana club golf course" class="card__image" />
           <h3 class="card__title card__title--header-two">
             Gymkhana club golf course
           </h3>
-          <button class="card__button">Book Now</button>
+          <button class="card__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
         </div>
         <div class="card activities__card" data-aos="fade-down" data-aos-delay="400">
-          <img loading="lazy" src="img/activities/activity-3.jpg" alt="Tamarind falls hikingtrip - full day" class="card__image" />
+          <img src="img/activities/activity-3.jpg" alt="Tamarind falls hikingtrip - full day" class="card__image" />
           <h3 class="card__title card__title--header-three">
             Tamarind falls hiking trip - full day
           </h3>
-          <button class="card__button">Book Now</button>
+          <button class="card__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
         </div>
         <div class="card activities__card" data-aos="fade-down" data-aos-delay="200">
-          <img loading="lazy" src="img/activities/activity-4.jpg" alt="The blue marine discovery quest" class="card__image" />
+          <img src="img/activities/activity-4.jpg" alt="The blue marine discovery quest" class="card__image" />
           <h3 class="card__title card__title--header-four">
             The blue marine discovery quest
           </h3>
-          <button class="card__button">Book Now</button>
+          <button class="card__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
         </div>
         <!-- /.card -->
       </div>
@@ -334,7 +342,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
-        <a class="logo footer__logo" href="#"><img loading="lazy" src="img/vertical_logo.svg" alt="Best Tour Plan" /></a>
+        <a class="footer__logo" href="#"><img class="footer__image" src="img/vertical_logo.svg" alt="Best Tour Plan" /></a>
         <div class="footer__list footer__categories">
           <h3 class="footer__title footer__title--all-categories">ALL CATEGORIES</h3>
           <ul class="footer__ul">
@@ -392,9 +400,9 @@
         <div class="footer__social-network">
           <h3 class="footer__title footer__title--inline">Social Network</h3>
           <div class="footer__social-links">
-            <a href="#" class="footer__link"><img loading="lazy" class="footer__link--img" src="img/facebook.svg" alt="icon:facebook" /></a><a href="#"
-              class="footer__link"><img loading="lazy" class="footer__link--img" src="img/youtube.svg" alt="icon: youtube" /></a><a href="#"
-              class="footer__link"><img loading="lazy"class="footer__link--img" src="img/instagram.svg" alt="icon: instagram" /></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="nofollow noopener" class="footer__link"><img src="img/facebook.svg" alt="icon:facebook" /></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="nofollow noopener" class="footer__link"><img src="img/youtube.svg" alt="icon: youtube" /></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="nofollow noopener" class="footer__link"><img src="img/instagram.svg" alt="icon: instagram" /></a>
           </div>
           <!-- /.footer__social-links -->
         </div>
@@ -425,24 +433,25 @@
           <ul class="footer__ul">
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
-                <img loading="lazy" class="footer__icon footer__icon--pad-1" src="img/map-marker.svg" alt="icon: map marker" />
+                <img class="footer__icon footer__icon--pad-1" src="img/map-marker.svg" alt="icon: map marker" />
               </div>
-              9748
-              Blossom Hill Rd undefined Lansing, Idaho 68545 United States
+              <span>9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States</span>
             </li>
             <li class="footer__item footer__item--mb-3">
               <div class="footer__icon-wrapper">
-                <img loading="lazy" class="footer__icon footer__icon--pad-2" src="img/phone-call.svg" alt="icon: phone call" />
+                <img class="footer__icon footer__icon--pad-2" src="img/phone-call.svg" alt="icon: phone call" />
               </div>
-              Tel (business hours) : 269 1500 <br />
-              Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
-              pm) <br />
-              Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm) <br />
+              <span> 
+                  Tel (business hours) : <a href="tel:2691500">269 1500</a><br />
+                  Tel (hotline) Monday - Saturday: <a href="tel:52566138">52⁠-⁠56⁠-⁠⁠61⁠-⁠38</a> (08:00 am – 20:00
+                  pm) <br />
+                  Tel (hotline) Sunday: <a href="tel:52566138">52⁠-⁠56⁠-⁠61⁠-⁠38</a> (08:00 am – 14:00 pm) <br />
+              </span>
             </li>
             <li class="footer__item footer__item--mb-3">
-              <div class="footer__icon-wrapper"><img loading="lazy" class="footer__icon footer__icon--pad-3" src="img/email.svg"
+              <div class="footer__icon-wrapper"><img class="footer__icon footer__icon--pad-3" src="img/email.svg"
                   alt="icon: email" /></div>
-              cherly.lawson@example.com
+                  <a href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
             </li>
           </ul>
         </div>
@@ -470,7 +479,7 @@
             <a class="footer__links__cou" href="#">Conditions of use</a>
             <a class="footer__links__cp" href="#">Cancellation policy</a>
           </span>
-          <span class="footer__payment"><img loading="lazy" class="footer__payment--image" src="img/payment-cards.png"
+          <span class="footer-payment"><img class="footer-payment__image" src="img/payment-cards.png"
               alt="Images: Payment cards"></span>
         </div>
         <!-- /.footer__other -->
@@ -485,7 +494,7 @@
     <!-- /.modal__overlay -->
     <div class="modal__dialog">
       <a href="#" class="modal__close">
-        <img loading="lazy" src="img/close.svg" alt="icon: close">
+        <img src="img/close.svg" alt="icon: close">
       </a>
       <h3 class="modal__title modal__title--sum">Booking</h3>
       <form action="send.php" method="POST" class="modal__form form">
@@ -507,7 +516,7 @@
     <!-- /.modal__overlay -->
     <div class="modal__dialog">
       <a href="#" class="modal__close">
-        <img loading="lazy" src="img/close.svg" alt="icon: close">
+        <img src="img/close.svg" alt="icon: close">
       </a>
       <h3 class="modal__title modal__title--sum">Send us a feedback</h3>
       <form action="send.php" method="POST" class="modal__form form">
@@ -524,14 +533,14 @@
   </div>
   <!-- /.modal rating-modal -->
 
-  <script src="js/jquery-3.6.0.min.js" defer ></script>
-  <script src="js/swiper-bundle.min.js" defer></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" defer></script>
-  <script src="js/parallax.min.js" defer></script>
-  <script src="js/jquery.validate.min.js" defer></script>
-  <script src="js/jquery.mask.min.js" defer></script>
-  <script src="js/aos.js" defer></script>
-  <script src="js/main.js" defer></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
